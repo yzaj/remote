@@ -5,6 +5,17 @@ set -euo pipefail
 
 #### 常量 ####
 readonly ROOTDIR='/yzaj'
+readonly CONDIRS='master-all master-batch
+                  slave-1-1  slave-1-2
+                  slave-2-1  slave-2-2
+                  slave-3-1  slave-3-2
+                  slave-4-1  slave-4-2
+                  slave-5-1  slave-5-2
+                  slave-6-1  slave-6-2
+                  slave-7-1  slave-7-2
+                  slave-8-1  slave-8-2
+                  slave-9-1  slave-9-2
+                  slave-10-1 slave-10-2'
 readonly E_NOT_FOUND=127
 
 #### 包含 ####
