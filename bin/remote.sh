@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# 控制手机
+# 远程配置
 set -euo pipefail
 
 #### 常量 ####
@@ -12,4 +12,3 @@ set -euo pipefail
 #### 变量 ####
 
 #### 主体 ####
-
