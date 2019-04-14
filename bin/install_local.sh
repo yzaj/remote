@@ -35,9 +35,9 @@ if [[ ! -d "${reposrc}" ]]; then
   exit "${E_NOT_FOUND}"
 fi
 
-
-
-
+for condir in ${CONDIRS}; do
+  
+done
 
 
 
