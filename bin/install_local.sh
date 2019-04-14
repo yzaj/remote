@@ -28,6 +28,7 @@ err() {
 #### 变量 ####
 readonly oneself="$0"
 readonly reposrc="${ROOTDIR}/remote-resource/resource"
+readonly srcdir="${ROOTDIR}/remote/resource"
 
 #### 主体 ####
 if [[ ! -d "${reposrc}" ]]; then
@@ -46,7 +47,7 @@ for condir in ${CONDIRS}; do
     cp "${reposrc}"/slave-x-y-config.ini "${conpath}"/config.ini
   fi
   
-  
+  cp "${srcdir}"/remote-config.exe "${conpath}"
 done
 
 
