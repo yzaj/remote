@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# 安装 Cygwin 到C盘或D盘
+# 安装远程配置到 yzaj 目录
 set -euo pipefail
 
 readonly REPO='cygwin'
