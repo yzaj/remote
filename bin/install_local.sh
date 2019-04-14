@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# 远程配置
+# 安装远程配置
 set -euo pipefail
 
 #### 常量 ####
