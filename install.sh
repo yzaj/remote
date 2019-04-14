@@ -11,21 +11,6 @@ err() {
   echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $@" >&2
 }
 
-
-
-
-
-
-
-
-drive='c'
-if [[ -d "/d" ]]; then
-  drive='d'
-fi
-
-
-
-
 if [[ -f "/d/yzaj/cygwin64/Cygwin-Terminal.ico" ]]; then
   drive='d'
 elif [[ -f "/c/yzaj/cygwin64/Cygwin-Terminal.ico" ]]; then
