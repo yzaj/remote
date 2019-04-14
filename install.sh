@@ -21,26 +21,6 @@ else
   drive='c'
 fi
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 readonly drive
 readonly url="https://github.com/yzaj/${REPO}.git"
 readonly repodir="/${drive}/yzaj/${REPO}"
