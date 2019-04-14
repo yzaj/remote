@@ -3,13 +3,20 @@
 # 安装远程配置到 yzaj 目录
 set -euo pipefail
 
-readonly REPO='cygwin'
+readonly REPO='remote'
 readonly MINTTY='git-bash.exe'
 readonly E_USE_MINTTY=1
 
 err() {
   echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $@" >&2
 }
+
+
+
+
+
+
+
 
 drive='c'
 if [[ -d "/d" ]]; then
