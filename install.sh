@@ -43,6 +43,6 @@ fi
 
 git clone --depth 1 "${url}" "${repodir}"
 
-if [[ -s "${repodir}/bin/${REPO}.sh" ]]; then
-  bash "${repodir}"/bin/"${REPO}.sh" "${drive}" 2>&1 | tee "${tempdir}/${REPO}.log"
+if [[ -s "${repodir}/bin/install_local.sh" ]]; then
+  bash "${repodir}"/bin/install_local.sh "${drive}" 2>&1 | tee "${tempdir}"/install_local.log
 fi
