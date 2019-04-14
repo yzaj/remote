@@ -36,6 +36,16 @@ if [[ ! -d "${reposrc}" ]]; then
 fi
 
 for condir in ${CONDIRS}; do
+  conpath="${ROOTDIR}/remote/console/${condir}"
+  
+  if [[ "${condir}" == "master-all" ]]; then
+    cp "${reposrc}"/master-all-config.ini "${conpath}"/config.ini
+  elif [[ "${condir}" == "master-batch" ]]; then
+    cp "${reposrc}"/master-batch-config.ini "${conpath}"/config.ini
+  else
+    cp "${reposrc}"/slave-x-y-config.ini "${conpath}"/config.ini
+  fi
+  
   
 done
 
