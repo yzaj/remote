@@ -20,7 +20,7 @@ readonly src="/etc/profile.d/yzaj-${REPO}.sh"
 
 if [[ ! -f "/${MINTTY}" ]]; then
   err "install.sh: please use cygwin to execute"
-  #exit "${E_USE_MINTTY}"
+  exit "${E_USE_MINTTY}"
 fi
 
 if ! type "${CMD}"; then
