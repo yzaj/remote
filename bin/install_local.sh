@@ -57,9 +57,3 @@ done
 cp "${srcdir}"/remote-upload.exe "${rootdir}"/remote/console/upload
 
 cp "${srcdir}/${drive}-远程配置V2.3.2.lnk" /c/Users/"${username}"/Desktop/远程配置V2.3.2.lnk
-
-
-
-
-
-
