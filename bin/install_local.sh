@@ -31,6 +31,8 @@ readonly drive="$1"
 readonly rootdir="/${drive}/yzaj"
 readonly reposrc="${rootdir}/remote-resource/resource"
 readonly srcdir="${rootdir}/remote/resource"
+username="$(whoami)"
+readonly username
 
 #### 主体 ####
 if [[ ! -d "${reposrc}" ]]; then
@@ -54,7 +56,7 @@ done
 
 cp "${srcdir}"/remote-upload.exe "${rootdir}"/remote/console/upload
 
-
+cp "${srcdir}/${drive}-远程配置V2.3.2.lnk" /c/Users/"${username}"/Desktop/远程配置V2.3.2.lnk
 
 
 
