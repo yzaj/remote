@@ -30,6 +30,7 @@ readonly oneself="$0"
 readonly drive="$1"
 readonly rootdir="/${drive}/yzaj"
 readonly reposrc="${rootdir}/remote-resource/resource"
+readonly srcdir="${rootdir}/remote/resource"
 
 #### 主体 ####
 if [[ ! -d "${reposrc}" ]]; then
@@ -47,9 +48,11 @@ for condir in ${CONDIRS}; do
   else
     cp "${reposrc}"/slave-x-y-config.ini "${conpath}"/config.ini
   fi
+  
+  cp "${srcdir}"/remote-config.exe "${conpath}"
 done
 
-
+cp "${srcdir}"/remote-upload.exe "${rootdir}"/remote/console/upload
 
 
 
