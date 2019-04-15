@@ -1,6 +1,18 @@
 #!/bin/bash
 #
 # 安装远程配置
+readonly CONDIRS='master-all master-batch
+                  slave-1-1  slave-1-2
+                  slave-2-1  slave-2-2
+                  slave-3-1  slave-3-2
+                  slave-4-1  slave-4-2
+                  slave-5-1  slave-5-2
+                  slave-6-1  slave-6-2
+                  slave-7-1  slave-7-2
+                  slave-8-1  slave-8-2
+                  slave-9-1  slave-9-2
+                  slave-10-1 slave-10-2
+                  upload'
 set -euo pipefail
 
 #### 常量 ####
@@ -25,9 +37,17 @@ if [[ ! -d "${reposrc}" ]]; then
   exit "${E_NOT_FOUND}"
 fi
 
-
-
-
+for condir in ${CONDIRS}; do
+  conpath="${rootdir}/remote/console/${condir}"
+  
+  if [[ "${condir}" == "master-all" ]]; then
+    cp "${reposrc}"/master-all-config.ini "${conpath}"/config.ini
+  elif [[ "${condir}" == "master-batch" ]]; then
+    cp "${reposrc}"/master-batch-config.ini "${conpath}"/config.ini
+  else
+    cp "${reposrc}"/slave-x-y-config.ini "${conpath}"/config.ini
+  fi
+done
 
 
 
