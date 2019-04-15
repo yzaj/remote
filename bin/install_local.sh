@@ -1,6 +1,9 @@
 #!/bin/bash
 #
 # 安装远程配置
+set -euo pipefail
+
+#### 常量 ####
 readonly CONDIRS='master-all master-batch
                   slave-1-1  slave-1-2
                   slave-2-1  slave-2-2
@@ -13,9 +16,6 @@ readonly CONDIRS='master-all master-batch
                   slave-9-1  slave-9-2
                   slave-10-1 slave-10-2
                   upload'
-set -euo pipefail
-
-#### 常量 ####
 readonly E_NOT_FOUND=127
 
 #### 包含 ####
