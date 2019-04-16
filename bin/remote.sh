@@ -12,6 +12,7 @@ rootdir="${bindir%%/remote*}"
 readonly rootdir
 
 #### 包含 ####
+. "${bindir}"/remotevar.sh
 
 #### 函数 ####
 
