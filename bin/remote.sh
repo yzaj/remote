@@ -13,6 +13,7 @@ readonly rootdir
 
 #### 包含 ####
 . "${bindir}"/remotevar.sh
+. "${rootdir}"/shell/lib/filedir.sh
 
 #### 函数 ####
 err() {
@@ -22,5 +23,10 @@ err() {
 #### 变量 ####
 
 #### 主体 ####
+# 读取配置文件
+filedir::config "qq_list" "[1-9][0-9,-]*[1-2,]" "${confdir}/remote.conf"
+
+readonly qq_list
+
 # 创建 log
 . "${bindir}"/remotemain.sh 2>&1 | tee "${tempdir}"/remote.log
