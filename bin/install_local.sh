@@ -4,18 +4,18 @@
 set -euo pipefail
 
 #### 常量 ####
-readonly CONDIRS='master-all master-batch
-                  slave-1-1  slave-1-2
-                  slave-2-1  slave-2-2
-                  slave-3-1  slave-3-2
-                  slave-4-1  slave-4-2
-                  slave-5-1  slave-5-2
-                  slave-6-1  slave-6-2
-                  slave-7-1  slave-7-2
-                  slave-8-1  slave-8-2
-                  slave-9-1  slave-9-2
-                  slave-10-1 slave-10-2
-                  upload'
+readonly CON_DIRS='master-all master-batch
+                   slave-1-1  slave-1-2
+                   slave-2-1  slave-2-2
+                   slave-3-1  slave-3-2
+                   slave-4-1  slave-4-2
+                   slave-5-1  slave-5-2
+                   slave-6-1  slave-6-2
+                   slave-7-1  slave-7-2
+                   slave-8-1  slave-8-2
+                   slave-9-1  slave-9-2
+                   slave-10-1 slave-10-2
+                   upload'
 readonly E_NOT_FOUND=127
 
 #### 包含 ####
@@ -29,31 +29,31 @@ err() {
 readonly oneself="$0"
 readonly drive="$1"
 readonly rootdir="/${drive}/yzaj"
-readonly reposrc="${rootdir}/remote-resource/resource"
-readonly srcdir="${rootdir}/remote/resource"
+readonly repores="${rootdir}/remote-resource/resource"
+readonly resdir="${rootdir}/remote/resource"
 username="$(whoami)"
 readonly username
 
 #### 主体 ####
-if [[ ! -d "${reposrc}" ]]; then
+if [[ ! -d "${repores}" ]]; then
   err "${oneself##*/}: remote-resource not found"
   exit "${E_NOT_FOUND}"
 fi
 
-for condir in ${CONDIRS}; do
-  conpath="${rootdir}/remote/console/${condir}"
+for con_dir in ${CON_DIRS}; do
+  con_path="${rootdir}/remote/console/${con_dir}"
   
-  if [[ "${condir}" == "master-all" ]]; then
-    cp "${reposrc}"/master-all-config.ini "${conpath}"/config.ini
-  elif [[ "${condir}" == "master-batch" ]]; then
-    cp "${reposrc}"/master-batch-config.ini "${conpath}"/config.ini
+  if [[ "${con_dir}" == "master-all" ]]; then
+    cp "${repores}"/master-all-config.ini "${con_path}"/config.ini
+  elif [[ "${con_dir}" == "master-batch" ]]; then
+    cp "${repores}"/master-batch-config.ini "${con_path}"/config.ini
   else
-    cp "${reposrc}"/slave-x-y-config.ini "${conpath}"/config.ini
+    cp "${repores}"/slave-x-y-config.ini "${con_path}"/config.ini
   fi
   
-  cp "${srcdir}"/remote-config.exe "${conpath}"
+  cp "${resdir}"/remote-config.exe "${con_path}"
 done
 
-cp "${srcdir}"/remote-upload.exe "${rootdir}"/remote/console/upload
+cp "${resdir}"/remote-upload.exe "${rootdir}"/remote/console/upload
 
-cp "${srcdir}/${drive}-远程配置V2.3.2.lnk" /c/Users/"${username}"/Desktop/远程配置V2.3.2.lnk
+cp "${resdir}/${drive}-远程配置V2.3.2.lnk" /c/Users/"${username}"/Desktop/远程配置V2.3.2.lnk
