@@ -4,6 +4,11 @@
 set -euo pipefail
 
 #### 常量 ####
+cd $(dirname "$0")
+bindir="$(pwd)"
+cd -
+
+readonly bindir
 
 #### 包含 ####
 
