@@ -22,12 +22,5 @@ err() {
 #### 变量 ####
 
 #### 主体 ####
-
-
-
-
-
-
-
-
-
+# 创建 log
+. "${bindir}"/remotemain.sh 2>&1 | tee "${tempdir}"/remote.log
