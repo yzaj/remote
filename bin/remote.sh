@@ -8,6 +8,8 @@ bindir="$(pwd)"
 cd -
 
 readonly bindir
+rootdir="${bindir%/remote*}"
+readonly rootdir
 
 #### 包含 ####
 
