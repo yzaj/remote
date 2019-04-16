@@ -1,14 +1,16 @@
 #!/bin/bash
 #
-# 远程配置
+# 主程序
 set -euo pipefail
 
-#### 常量 ####
+. "${bindir}"/remotefunc.sh
+. "${bindir}"/remotearg.sh
 
-#### 包含 ####
 
-#### 函数 ####
 
-#### 变量 ####
 
-#### 主体 ####
+
+
+
+
+
