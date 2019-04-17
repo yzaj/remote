@@ -15,10 +15,10 @@ else
   exit "${E_UNRECOGNIZED_OPTION}"
 fi
 
-if [[ "${batch}" =~ ^[1-3][1-3,]{0,5}$ ]]; then
+if [[ "${batchs}" =~ ^[1-3][1-3,]{0,5}$ ]]; then
   :
 else
-  err "remote.sh: unrecognized option '${batch}'"
+  err "remote.sh: unrecognized option '${batchs}'"
   exit "${E_UNRECOGNIZED_OPTION}"
 fi
 
