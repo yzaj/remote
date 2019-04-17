@@ -18,3 +18,7 @@ readonly qq="$1"
 readonly batchs="$2"
 
 readonly condir="${rootdir}/remote/console"
+
+# 变量 - remotemain.sh
+readonly taskdir="${tempdir}/task"
+readonly updir="${tempdir}/upload"
