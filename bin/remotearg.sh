@@ -22,6 +22,13 @@ else
   exit "${E_UNRECOGNIZED_OPTION}"
 fi
 
+qqbatchs="${batchs//,/\\n}"
+qqbatchs="$(echo -e "${qqbatchs}" | sort -nu | xargs)"
+readonly qqbatchs
 
-
-
+for qqbatch in ${qqbatchs}; do
+  if ((qqbatch > 3)); then
+    err "remote.sh: unrecognized option '${batchs}'"
+    exit "${E_UNRECOGNIZED_OPTION}"
+  fi
+done
