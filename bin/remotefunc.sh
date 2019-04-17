@@ -7,7 +7,7 @@ set -euo pipefail
 #
 #       err_uo
 #
-#       cpset
+#       master_cpset
 #
 ###################################################################################################
 
@@ -22,13 +22,13 @@ err_uo() {
 }
 
 # 功  能: 将文件复制到 upload 目录下, 并生成多个形如 set1.ini set2.ini set3.ini 的文件
-# 使  用: cpset 文件 最小数值 最大数值
+# 使  用: master_cpset 文件 最小数值 最大数值
 # 参数 1: 文件    [default: ]
 # 参数 1: 最小数值    [default: ]
 # 参数 1: 最大数值    [default: ]
 # 返回值: 
 # 备  注: 允许文件不存在, 数值的取值范围: 1 ~ 60
-cpset() {
+master_cpset() {
   local file="$1"
   local min="$2"
   local max="$3"
