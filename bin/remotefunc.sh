@@ -8,6 +8,7 @@ set -euo pipefail
 #       err_uo
 #
 #       master_cpset
+#       slave_cpset
 #
 ###################################################################################################
 
@@ -52,6 +53,14 @@ master_cpset() {
 # 参数 1:     [default: ]
 # 返回值: 
 # 备  注: 
+slave_cpset() {
+  local dir="$1"
+  local min="$2"
+  local max="$3"
+  local nums
+  
+  
+}
 
 # 功  能: 
 # 使  用: 
