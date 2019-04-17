@@ -59,7 +59,15 @@ slave_cpset() {
   local max="$3"
   local nums
   
+  mkdir -p "${updir}"
   
+  nums="$(seq "${min}" "${max}")"
+  
+  for num in ${nums}; do
+    if [[ -s "${dir}/set${num}.ini" ]]; then
+      cp "${dir}/set${num}.ini" "${updir}"
+    fi
+  done
 }
 
 # 功  能: 
