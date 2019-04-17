@@ -15,3 +15,5 @@ readonly tempdir="${rootdir}/temp/remote"
 # 变量 - remotearg.sh
 readonly qq="$1"
 readonly batchs="$2"
+
+readonly condir="${rootdir}/remote/console"
