@@ -48,7 +48,7 @@ master_cpset() {
   done
 }
 
-# 功  能: 将目录下的 set*.ini 文件复制到 upload 目录
+# 功  能: 将目录下的 set*.ini 文件, 复制到 upload 目录
 # 使  用: slave_cpset 目录 最小数值 最大数值
 # 参数 1: 目录    [default: ]
 # 参数 2: 最小数值    [default: ]
