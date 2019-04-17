@@ -21,7 +21,7 @@ err_uo() {
   exit "${E_UNRECOGNIZED_OPTION}"
 }
 
-# 功  能: 将文件复制到 upload 目录下, 并生成多个文件, 形如: set1.ini set2.ini set3.ini ...
+# 功  能: 将文件复制到 upload 目录下, 并生成多个形如 set1.ini set2.ini set3.ini 的文件
 # 使  用: cpset 文件 最小数值 最大数值
 # 参数 1: 文件    [default: ]
 # 参数 1: 最小数值    [default: ]
