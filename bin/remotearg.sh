@@ -11,15 +11,13 @@ if [[ "${qq}" == "all" ]]; then
 elif [[ "${qq}" =~ ^[1-9]0{0,1}-[1-2]$ && -d "${condir}/slave-${qq}" ]] && echo "${qq_list}" | grep ",${qq},"; then
   :
 else
-  err "remote.sh: unrecognized option '${qq}'"
-  exit "${E_UNRECOGNIZED_OPTION}"
+  err_uo "${qq}"
 fi
 
 if [[ "${batchs}" =~ ^[1-3][1-3,]{0,5}$ ]]; then
   :
 else
-  err "remote.sh: unrecognized option '${batchs}'"
-  exit "${E_UNRECOGNIZED_OPTION}"
+  err_uo "${batchs}"
 fi
 
 qqbatchs="${batchs//,/\\n}"
@@ -28,7 +26,6 @@ readonly qqbatchs
 
 for qqbatch in ${qqbatchs}; do
   if ((qqbatch > 3)); then
-    err "remote.sh: unrecognized option '${batchs}'"
-    exit "${E_UNRECOGNIZED_OPTION}"
+    err_uo "${batchs}"
   fi
 done
