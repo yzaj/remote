@@ -25,8 +25,8 @@ err_uo() {
 # 功  能: 将文件复制到 upload 目录下, 并生成多个形如 set1.ini set2.ini set3.ini 的文件
 # 使  用: master_cpset 文件 最小数值 最大数值
 # 参数 1: 文件    [default: ]
-# 参数 1: 最小数值    [default: ]
-# 参数 1: 最大数值    [default: ]
+# 参数 2: 最小数值    [default: ]
+# 参数 3: 最大数值    [default: ]
 # 返回值: 
 # 备  注: 允许文件不存在, 数值的取值范围: 1 ~ 60
 master_cpset() {
@@ -48,11 +48,13 @@ master_cpset() {
   done
 }
 
-# 功  能: 
-# 使  用: 
-# 参数 1:     [default: ]
+# 功  能: 将目录下的 set*.ini 文件复制到 upload 目录
+# 使  用: slave_cpset 目录 最小数值 最大数值
+# 参数 1: 目录    [default: ]
+# 参数 2: 最小数值    [default: ]
+# 参数 3: 最大数值    [default: ]
 # 返回值: 
-# 备  注: 
+# 备  注: 允许文件不存在, 数值的取值范围: 1 ~ 60
 slave_cpset() {
   local dir="$1"
   local min="$2"
