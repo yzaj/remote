@@ -32,6 +32,7 @@ readonly rootdir="/${drive}/yzaj"
 readonly repores="${rootdir}/remote-resource/resource"
 readonly resdir="${rootdir}/remote/resource"
 readonly bindir="${rootdir}/remote/bin"
+readonly condir="${rootdir}/remote/console"
 username="$(whoami)"
 readonly username
 
