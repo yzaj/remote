@@ -79,6 +79,30 @@ slave_cpset() {
 # 参数 1:     [default: ]
 # 返回值: 
 # 备  注: 
+cpall() {
+  local bats="$1"
+  local bat="$2"
+  
+  if [[ "${bats// /}" == "123" ]]; then
+    if [[ -s "${condir}/master-all/set1.ini" || -s "${condir}/master-all/set2.ini" ]]; then
+      master_cpset "${condir}/master-all/set1.ini" 1 60
+      master_cpset "${condir}/master-all/set2.ini" 1 60
+      
+      return
+    fi
+  fi
+  
+  if [[ "${bat}" == "1" ]]; then
+    master_cpset "${condir}/master-all/set4.ini" 1 20
+    master_cpset "${condir}/master-all/set7.ini" 1 20
+  elif [[ "${bat}" == "2" ]]; then
+    master_cpset "${condir}/master-all/set5.ini" 21 40
+    master_cpset "${condir}/master-all/set8.ini" 21 40
+  else
+    master_cpset "${condir}/master-all/set6.ini" 41 60
+    master_cpset "${condir}/master-all/set9.ini" 41 60
+  fi
+}
 
 # 功  能: 将 master-batch 和 slave-* 目录下的部分 set*.ini 文件, 复制到 upload 目录
 # 使  用: cpbatch 文件编号 目录编号 批次编号
@@ -109,33 +133,3 @@ cpbatch() {
   master_cpset "${condir}/master-batch/set${filenum}.ini" "${min}" "${max}"
   slave_cpset "${condir}/slave-${dirnum}" "${min}" "${max}"
 }
-
-# 功  能: 
-# 使  用: 
-# 参数 1:     [default: ]
-# 返回值: 
-# 备  注: 
-
-# 功  能: 
-# 使  用: 
-# 参数 1:     [default: ]
-# 返回值: 
-# 备  注: 
-
-# 功  能: 
-# 使  用: 
-# 参数 1:     [default: ]
-# 返回值: 
-# 备  注: 
-
-# 功  能: 
-# 使  用: 
-# 参数 1:     [default: ]
-# 返回值: 
-# 备  注: 
-
-# 功  能: 
-# 使  用: 
-# 参数 1:     [default: ]
-# 返回值: 
-# 备  注: 
