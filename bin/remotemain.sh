@@ -111,6 +111,9 @@ if [[ "${qq}" != "all" ]]; then
   done
 fi
 
+# 修改配置
+. "${bindir}"/config_upload.sh
+
 # 上传配置, DOS 命令
 cd "${updir}"
 

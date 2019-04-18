@@ -31,6 +31,7 @@ readonly drive="$1"
 readonly rootdir="/${drive}/yzaj"
 readonly repores="${rootdir}/remote-resource/resource"
 readonly resdir="${rootdir}/remote/resource"
+readonly bindir="${rootdir}/remote/bin"
 username="$(whoami)"
 readonly username
 
@@ -57,3 +58,5 @@ done
 cp "${resdir}"/remote-upload.exe "${rootdir}"/remote/console/upload
 
 cp "${resdir}/${drive}-远程配置V2.3.2.lnk" /c/Users/"${username}"/Desktop/远程配置V2.3.2.lnk
+
+. "${bindir}"/config_console.sh
