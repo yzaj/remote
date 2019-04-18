@@ -20,64 +20,64 @@ for qqbatch in ${qqbatchs}; do
       cpall#######
       ;;
     1-1)
-      cpbatch 1 "${qq}"
+      cpbatch 1 "${qq}" "${qqbatch}"
       ;;
     1-2)
-      cpbatch 2 "${qq}"
+      cpbatch 2 "${qq}" "${qqbatch}"
       ;;
     2-1)
-      cpbatch 3 "${qq}"
+      cpbatch 3 "${qq}" "${qqbatch}"
       ;;
     2-2)
-      cpbatch 4 "${qq}"
+      cpbatch 4 "${qq}" "${qqbatch}"
       ;;
     3-1)
-      cpbatch 5 "${qq}"
+      cpbatch 5 "${qq}" "${qqbatch}"
       ;;
     3-2)
-      cpbatch 6 "${qq}"
+      cpbatch 6 "${qq}" "${qqbatch}"
       ;;
     4-1)
-      cpbatch 7 "${qq}"
+      cpbatch 7 "${qq}" "${qqbatch}"
       ;;
     4-2)
-      cpbatch 8 "${qq}"
+      cpbatch 8 "${qq}" "${qqbatch}"
       ;;
     5-1)
-      cpbatch 9 "${qq}"
+      cpbatch 9 "${qq}" "${qqbatch}"
       ;;
     5-2)
-      cpbatch 10 "${qq}"
+      cpbatch 10 "${qq}" "${qqbatch}"
       ;;
     6-1)
-      cpbatch 11 "${qq}"
+      cpbatch 11 "${qq}" "${qqbatch}"
       ;;
     6-2)
-      cpbatch 12 "${qq}"
+      cpbatch 12 "${qq}" "${qqbatch}"
       ;;
     7-1)
-      cpbatch 13 "${qq}"
+      cpbatch 13 "${qq}" "${qqbatch}"
       ;;
     7-2)
-      cpbatch 14 "${qq}"
+      cpbatch 14 "${qq}" "${qqbatch}"
       ;;
     8-1)
-      cpbatch 15 "${qq}"
+      cpbatch 15 "${qq}" "${qqbatch}"
       ;;
     8-2)
-      cpbatch 16 "${qq}"
+      cpbatch 16 "${qq}" "${qqbatch}"
       ;;
     9-1)
-      cpbatch 17 "${qq}"
+      cpbatch 17 "${qq}" "${qqbatch}"
       ;;
     9-2)
-      cpbatch 18 "${qq}"
+      cpbatch 18 "${qq}" "${qqbatch}"
       ;;
     10-1)
-      cpbatch 19 "${qq}"
+      cpbatch 19 "${qq}" "${qqbatch}"
       ;;
     10-2)
-      cpbatch 20 "${qq}"
+      cpbatch 20 "${qq}" "${qqbatch}"
       ;;
     *)
       :
