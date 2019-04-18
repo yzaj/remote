@@ -74,11 +74,12 @@ slave_cpset() {
   done
 }
 
-# 功  能: 
-# 使  用: 
-# 参数 1:     [default: ]
+# 功  能: 将 master-all 目录下的部分 set*.ini 文件, 复制到 upload 目录
+# 使  用: cpall 所有批次编号 某个批次编号
+# 参数 1: 所有批次编号    [default: ]
+# 参数 2: 某个批次编号    [default: ]
 # 返回值: 
-# 备  注: 
+# 备  注: 使用了 master_cpset, 后续代码会删除部分 set*.ini 文件
 cpall() {
   local bats="$1"
   local bat="$2"
