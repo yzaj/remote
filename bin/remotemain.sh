@@ -6,8 +6,6 @@ set -euo pipefail
 . "${bindir}"/remotefunc.sh
 . "${bindir}"/remotearg.sh
 
-mkdir -p "${taskdir}"
-
 if [[ -d "${updir}" ]]; then
   rm -r "${updir}"
 fi
@@ -93,7 +91,7 @@ for rmset in ${RMSETS}; do
   fi
 done
 
-
+mkdir -p "${taskdir}"
 
 
 

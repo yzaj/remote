@@ -25,8 +25,8 @@ readonly batchs="$2"
 readonly condir="${rootdir}/remote/console"
 
 # 变量 - remotemain.sh
-readonly taskdir="${tempdir}/task"
 readonly updir="${tempdir}/upload"
+readonly taskdir="${tempdir}/task"
 
 todaytask="${taskdir}/$(date +'%Y-%m-%d').task"
 beforetask="${taskdir}/$(date +'%Y-%m-%d' -d '-7day').task"
