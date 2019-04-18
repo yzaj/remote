@@ -6,6 +6,7 @@ set -euo pipefail
 . "${bindir}"/remotefunc.sh
 . "${bindir}"/remotearg.sh
 
+# 选择配置
 if [[ -d "${updir}" ]]; then
   rm -r "${updir}"
 fi
@@ -91,6 +92,7 @@ for rmset in ${RMSETS}; do
   fi
 done
 
+# 记录任务
 mkdir -p "${taskdir}"
 
 
