@@ -30,6 +30,8 @@ readonly taskdir="${tempdir}/task"
 
 todaytask="${taskdir}/$(date +'%Y-%m-%d').task"
 beforetask="${taskdir}/$(date +'%Y-%m-%d' -d '-7day').task"
+tasktime="$(date +'%H:%M:%S')"
 
 readonly todaytask
 readonly beforetask
+readonly tasktime

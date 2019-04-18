@@ -95,17 +95,12 @@ done
 # 记录任务
 mkdir -p "${taskdir}"
 
+if [[ -f "${beforetask}" ]]; then
+  rm "${beforetask}"
+fi
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+if [[ "${qq}" != "all" ]]; then
+  for qqbatch in ${qqbatchs}; do
+    echo "${qq} ${qqbatch} ${tasktime}" >> "${todaytask}"
+  done
+fi
