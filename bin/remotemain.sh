@@ -110,3 +110,12 @@ if [[ "${qq}" != "all" ]]; then
     
   done
 fi
+
+# 上传配置
+cd "${updir}"
+
+sleep 1
+start remote-config.exe
+
+sleep 1
+start remote-upload.exe
