@@ -100,6 +100,10 @@ if [[ -f "${beforetask}" ]]; then
 fi
 
 if [[ "${qq}" != "all" ]]; then
+  if [[ -f "${todaytask}" ]]; then
+    sed -i "/^${qq} ${qqbatch}/d" "${todaytask}"
+  fi
+  
   for qqbatch in ${qqbatchs}; do
     echo "${qq} ${qqbatch} ${tasktime}" >> "${todaytask}"
   done
