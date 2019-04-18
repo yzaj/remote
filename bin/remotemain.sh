@@ -111,7 +111,7 @@ if [[ "${qq}" != "all" ]]; then
   done
 fi
 
-# 上传配置
+# 上传配置, DOS 命令
 cd "${updir}"
 
 sleep 1
