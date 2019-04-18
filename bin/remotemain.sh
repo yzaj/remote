@@ -17,7 +17,7 @@ cp -r "${condir}"/upload "${tempdir}"
 for qqbatch in ${qqbatchs}; do
   case "${qq}" in
     all)
-      cpall#######
+      cpall "${qqbatch}"
       ;;
     1-1)
       cpbatch 1 "${qq}" "${qqbatch}"
