@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# 远程配置
+# 配置 console 目录
 set -euo pipefail
 
 
