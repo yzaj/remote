@@ -80,11 +80,13 @@ slave_cpset() {
 # 返回值: 
 # 备  注: 
 
-# 功  能: 
-# 使  用: 
-# 参数 1:     [default: ]
+# 功  能: 将 master-batch 和 slave-* 目录下的部分 set*.ini 文件, 复制到 upload 目录
+# 使  用: cpbatch 文件编号 目录编号 批次编号
+# 参数 1: 文件编号    [default: ]
+# 参数 2: 目录编号    [default: ]
+# 参数 3: 批次编号    [default: ]
 # 返回值: 
-# 备  注: 
+# 备  注: 使用了 master_cpset, slave_cpset
 cpbatch() {
   local filenum="$1"
   local dirnum="$2"
