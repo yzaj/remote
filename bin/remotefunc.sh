@@ -85,6 +85,27 @@ slave_cpset() {
 # 参数 1:     [default: ]
 # 返回值: 
 # 备  注: 
+cpbatch() {
+  local filenum="$1"
+  local dirnum="$2"
+  local bat="$3"
+  local min=1
+  local max=20
+  
+  if [[ "${bat}" == "2" ]]; then
+    ((filenum += 20))
+    min=21
+    max=40
+  elif [[ "${bat}" == "3" ]]; then
+    ((filenum += 40))
+    min=41
+    max=60
+  else
+    :
+  fi
+  
+  
+}
 
 # 功  能: 
 # 使  用: 
