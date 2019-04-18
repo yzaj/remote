@@ -6,6 +6,11 @@ set -euo pipefail
 # 常量 - 退出状态码
 readonly E_UNRECOGNIZED_OPTION=2
 
+# 常量 - remotemain.sh
+readonly RMSETS='1 2
+                 7 8 9
+                 3 10'
+
 # 变量 - remote.conf
 qq_list='3-1,3-2,4-1,4-2,5-1,5-2,6-1,6-2,7-1,7-2'
 
