@@ -104,7 +104,8 @@ cpbatch() {
     :
   fi
   
-  
+  master_cpset "${condir}/master-batch/set${filenum}.ini" "${min}" "${max}"
+  slave_cpset "${condir}/slave-${dirnum}" "${min}" "${max}"
 }
 
 # 功  能: 
