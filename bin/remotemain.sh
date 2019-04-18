@@ -85,7 +85,13 @@ for qqbatch in ${qqbatchs}; do
   esac
 done
 
-
+for rmset in ${RMSETS}; do
+  rmset_path="${condir}/master-all/set${rmset}.ini"
+  
+  if [[ -f "${rmset_path}" ]]; then
+    rm "${rmset_path}"
+  fi
+done
 
 
 
