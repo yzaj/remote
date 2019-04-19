@@ -60,4 +60,16 @@ cp "${resdir}"/remote-upload.exe "${rootdir}"/remote/console/upload
 
 cp "${resdir}/${drive}-远程配置V2.3.2.lnk" /c/Users/"${username}"/Desktop/远程配置V2.3.2.lnk
 
+cat > /c/Users/"${username}"/remote.sh <<-EOF
+#!/bin/bash
+#
+# 控制手机的交互
+set -euo pipefail
+
+#
+
+bash ${bindir}/remote.sh "$@"
+
+EOF
+
 . "${bindir}"/config_console.sh
