@@ -63,13 +63,12 @@ cp "${resdir}/${drive}-远程配置V2.3.2.lnk" /c/Users/"${username}"/Desktop/�
 cat > /c/Users/"${username}"/remote.sh <<-EOF
 #!/bin/bash
 #
-# 控制手机的交互
+# 远程配置的链接
 set -euo pipefail
 
-#
+# 可复制到 C:\Program Files\Git\usr\bin
 
-bash ${bindir}/remote.sh "$@"
-
+bash ${bindir}/remote.sh "\$@"
 EOF
 
 . "${bindir}"/config_console.sh
