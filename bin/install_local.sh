@@ -74,7 +74,7 @@ EOF
 cat > /c/Users/"${username}"/config_console.sh <<-EOF
 #!/bin/bash
 #
-# 远程配置的链接
+# 配置 console 目录的链接
 set -euo pipefail
 
 # 可复制到 C:\Program Files\Git\usr\bin
