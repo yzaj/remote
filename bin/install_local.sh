@@ -71,4 +71,15 @@ set -euo pipefail
 bash ${bindir}/remote.sh "\$@"
 EOF
 
+cat > /c/Users/"${username}"/config_console.sh <<-EOF
+#!/bin/bash
+#
+# 远程配置的链接
+set -euo pipefail
+
+# 可复制到 C:\Program Files\Git\usr\bin
+
+bash ${bindir}/config_console.sh
+EOF
+
 . "${bindir}"/config_console.sh
