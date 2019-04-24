@@ -60,6 +60,8 @@ cp "${resdir}"/remote-upload.exe "${rootdir}"/remote/console/upload
 
 cp "${resdir}/${drive}-远程配置V2.3.2.lnk" /c/Users/"${username}"/Desktop/远程配置V2.3.2.lnk
 
+cp "${resdir}/${drive}-config_all.sh.lnk" /c/Users/"${username}"/Desktop/config_all.sh.lnk
+
 cat > /c/Users/"${username}"/remote.sh <<-EOF
 #!/bin/bash
 #
