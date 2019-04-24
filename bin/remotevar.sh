@@ -25,6 +25,8 @@ readonly batchs="$2"
 readonly condir="${rootdir}/remote/console"
 
 # 变量 - remotemain.sh
+qq_all=''
+
 readonly updir="${tempdir}/upload"
 readonly taskdir="${tempdir}/task"
 
