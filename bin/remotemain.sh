@@ -112,6 +112,10 @@ if [[ "${qq}" != "all" ]]; then
 fi
 
 # 修改配置
+if [[ "${qq}" == "all" ]]; then
+  . "${bindir}"/config_all.sh
+fi
+
 if [[ "${qq}" == "all" && -z "${qq_all}" ]]; then
   :
 else
