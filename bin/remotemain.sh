@@ -112,13 +112,13 @@ if [[ "${qq}" != "all" ]]; then
 fi
 
 # 修改配置
+sed -i 's/\r$//g' "${bindir}"/config_all.sh
+
 if [[ "${qq}" == "all" ]]; then
-  sed -i 's/\r$//g' "${bindir}"/config_all.sh
-  
   . "${bindir}"/config_all.sh
-  
-  sed -i '/^[^#].*qq_all.*/d' "${bindir}"/config_all.sh
 fi
+
+sed -i '/^[^#].*qq_all.*/d' "${bindir}"/config_all.sh
 
 if [[ "${qq}" == "all" && -z "${qq_all}" ]]; then
   :
