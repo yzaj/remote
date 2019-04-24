@@ -118,7 +118,8 @@ if [[ "${qq}" == "all" ]]; then
   . "${bindir}"/config_all.sh
 fi
 
-sed -i '/^[^#].*qq_all.*/d' "${bindir}"/config_all.sh
+sed -i 's/^[ \t]*qq_all.*//g' "${bindir}"/config_all.sh
+sed -i 's/^[ \t]*readonly.*//g' "${bindir}"/config_all.sh
 
 if [[ "${qq}" == "all" && -z "${qq_all}" ]]; then
   :
