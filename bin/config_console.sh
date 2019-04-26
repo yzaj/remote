@@ -50,5 +50,6 @@ cp "${condir}"/master-all/set53.ini "${condir}"/slave-4-1/set31.ini
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-6-1/set31.ini
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-6-1/set32.ini
 
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set26.ini
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set31.ini
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set32.ini
