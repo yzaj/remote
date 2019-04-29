@@ -84,4 +84,4 @@ set -euo pipefail
 bash ${bindir}/config_console.sh
 EOF
 
-. "${bindir}"/config_console.sh
+bash "${bindir}"/config_console.sh

@@ -3,6 +3,16 @@
 # 配置 console 目录
 set -euo pipefail
 
+cd $(dirname "$0")
+bindir="$(pwd)"
+cd -
+
+readonly bindir
+rootdir="${bindir%%/remote*}"
+readonly rootdir
+
+readonly condir="${rootdir}/remote/console"
+
 # master-batch
 readonly S97='25 27 31 33'
 readonly S112='6 8 10 12 14 26 28 30 32 34'
