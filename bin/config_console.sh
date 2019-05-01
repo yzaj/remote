@@ -54,12 +54,28 @@ cp "${condir}"/master-all/set51.ini "${condir}"/slave-7-1/set20.ini
 # slave: 141
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-3-1/set31.ini
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-3-1/set32.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-3-1/set37.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-3-1/set38.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-3-1/set39.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-3-1/set40.ini
 
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-4-1/set31.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-4-1/set37.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-4-1/set38.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-4-1/set39.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-4-1/set40.ini
 
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-6-1/set31.ini
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-6-1/set32.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-6-1/set37.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-6-1/set38.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-6-1/set39.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-6-1/set40.ini
 
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set26.ini
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set31.ini
 cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set32.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set37.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set38.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set39.ini
+cp "${condir}"/master-all/set53.ini "${condir}"/slave-7-1/set40.ini
