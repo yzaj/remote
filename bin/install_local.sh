@@ -29,14 +29,20 @@ err() {
 readonly oneself="$0"
 readonly drive="$1"
 readonly rootdir="/${drive}/yzaj"
-readonly repores="${rootdir}/remote-resource/resource"
 readonly resdir="${rootdir}/remote/resource"
 readonly bindir="${rootdir}/remote/bin"
 readonly condir="${rootdir}/remote/console"
+repores="${rootdir}/remote-resource/resource"
 username="$(whoami)"
 readonly username
 
 #### 主体 ####
+if [[ -d "${rootdir}/remote-resource2/resource" ]]; then
+  repores="${rootdir}/remote-resource2/resource"
+fi
+
+readonly repores
+
 if [[ ! -d "${repores}" ]]; then
   err "${oneself##*/}: remote-resource not found"
   exit "${E_NOT_FOUND}"
