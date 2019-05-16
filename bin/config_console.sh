@@ -15,8 +15,8 @@ readonly condir="${rootdir}/remote/console"
 
 # master-batch
 readonly S97='25 27 31 33'
-readonly S112='6 8 10 12 14 26 28 30 32 34'
-readonly S141='5 7 9 11 13 29'
+readonly S112='6 8 10 12 14 26 28 30 32 34 46 48 50 52 54'
+readonly S141='5 7 9 11 13 29 45 47 49 51 53'
 
 for s in ${S97}; do
   cp "${condir}"/master-all/set51.ini "${condir}"/master-batch/set${s}.ini
