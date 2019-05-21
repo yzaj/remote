@@ -34,7 +34,7 @@ SetupOCXFile=
 // Ô¶³ÌÅäÖÃ ¡ª¡ª
 
 // µÇÂ¼
-MoveTo 960, 610
+MoveTo 960, 550
 Delay 1000
 LeftClick 1
 
